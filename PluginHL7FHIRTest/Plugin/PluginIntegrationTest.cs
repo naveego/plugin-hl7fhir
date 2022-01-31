@@ -22,7 +22,7 @@ namespace PluginHubspotTest.Plugin
         {
             return new Settings()
             {
-                 Endpoint = @""
+                Endpoint = @""
             };
         }
 
@@ -300,7 +300,7 @@ namespace PluginHubspotTest.Plugin
             var channel = new Channel($"localhost:{port}", ChannelCredentials.Insecure);
             var client = new Publisher.PublisherClient(channel);
 
-            var schema = GetTestSchema("InventoryReport");
+            var schema = GetTestSchema("AllPatients");
 
             var connectRequest = GetConnectSettings();
 

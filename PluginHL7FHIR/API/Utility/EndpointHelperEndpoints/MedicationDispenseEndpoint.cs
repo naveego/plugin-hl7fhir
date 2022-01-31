@@ -75,8 +75,8 @@ namespace PluginHL7FHIR.API.Utility.EndpointHelperEndpoints
 
                 var client = apiClient.GetClient();
 
-               // var searchResultResponse = await System.Threading.Tasks.Task.Run(() => client.Search<Patient>());
-                var searchResultResponse = client.Search<Medication>();
+                var searchResultResponse = await System.Threading.Tasks.Task.Run(() => client.Search<Medication>());
+                //var searchResultResponse = client.Search<Medication>();
 
                 foreach (var entry in searchResultResponse.Entry)
                 {
@@ -169,8 +169,8 @@ namespace PluginHL7FHIR.API.Utility.EndpointHelperEndpoints
 
                 var client = apiClient.GetClient();
 
-               // var searchResultResponse = await System.Threading.Tasks.Task.Run(() => client.Search<Patient>());
-                var searchResultResponse = client.Search<Medication>();
+                var searchResultResponse = await System.Threading.Tasks.Task.Run(() => client.Search<Medication>());
+                //var searchResultResponse = client.Search<Medication>();
 
                 
                 foreach (var entry in searchResultResponse.Entry)

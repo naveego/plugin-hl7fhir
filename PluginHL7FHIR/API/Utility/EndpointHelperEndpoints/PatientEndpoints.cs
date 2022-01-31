@@ -26,12 +26,6 @@ namespace PluginHL7FHIR.API.Utility.EndpointHelperEndpoints
             public override async Task<Schema> GetStaticSchemaAsync(IApiClient apiClient, Schema schema)
             {
                 //Supporting endpoints needed:
-                //patient.GeneralPractitioner
-                
-                
-                
-                
-                //patient.Link //probably not needed here, links to other relevant patients
                 List<string> staticSchemaProperties = new List<string>()
                 {
                     "id", //.net ID datatype, string
@@ -92,8 +86,8 @@ namespace PluginHL7FHIR.API.Utility.EndpointHelperEndpoints
 
                 var client = apiClient.GetClient();
 
-               // var searchResultResponse = await System.Threading.Tasks.Task.Run(() => client.Search<Patient>());
-                var searchResultResponse = client.Search<Patient>();
+                var searchResultResponse = await System.Threading.Tasks.Task.Run(() => client.Search<Patient>());
+                //var searchResultResponse = client.Search<Patient>();
 
                 foreach (var entry in searchResultResponse.Entry)
                 {
@@ -187,8 +181,8 @@ namespace PluginHL7FHIR.API.Utility.EndpointHelperEndpoints
 
                 var client = apiClient.GetClient();
 
-               // var searchResultResponse = await System.Threading.Tasks.Task.Run(() => client.Search<Patient>());
-                var searchResultResponse = client.Search<Patient>();
+               var searchResultResponse = await System.Threading.Tasks.Task.Run(() => client.Search<Patient>());
+               // var searchResultResponse = client.Search<Patient>();
 
                 foreach (var entry in searchResultResponse.Entry)
                 {
@@ -375,8 +369,8 @@ namespace PluginHL7FHIR.API.Utility.EndpointHelperEndpoints
 
                 var client = apiClient.GetClient();
 
-               // var searchResultResponse = await System.Threading.Tasks.Task.Run(() => client.Search<Patient>());
-                var searchResultResponse = client.Search<Patient>();
+               var searchResultResponse = await System.Threading.Tasks.Task.Run(() => client.Search<Patient>());
+               // var searchResultResponse = client.Search<Patient>();
 
                 foreach (var entry in searchResultResponse.Entry)
                 {
@@ -467,8 +461,8 @@ namespace PluginHL7FHIR.API.Utility.EndpointHelperEndpoints
 
                 var client = apiClient.GetClient();
 
-               // var searchResultResponse = await System.Threading.Tasks.Task.Run(() => client.Search<Patient>());
-                var searchResultResponse = client.Search<Patient>();
+               var searchResultResponse = await System.Threading.Tasks.Task.Run(() => client.Search<Patient>());
+               // var searchResultResponse = client.Search<Patient>();
 
                 foreach (var entry in searchResultResponse.Entry)
                 {
@@ -563,8 +557,8 @@ namespace PluginHL7FHIR.API.Utility.EndpointHelperEndpoints
 
                 var client = apiClient.GetClient();
 
-               // var searchResultResponse = await System.Threading.Tasks.Task.Run(() => client.Search<Patient>());
-                var searchResultResponse = client.Search<Patient>();
+               var searchResultResponse = await System.Threading.Tasks.Task.Run(() => client.Search<Patient>());
+               // var searchResultResponse = client.Search<Patient>();
 
                 foreach (var entry in searchResultResponse.Entry)
                 {
@@ -658,8 +652,8 @@ namespace PluginHL7FHIR.API.Utility.EndpointHelperEndpoints
 
                 var client = apiClient.GetClient();
 
-               // var searchResultResponse = await System.Threading.Tasks.Task.Run(() => client.Search<Patient>());
-                var searchResultResponse = client.Search<Patient>();
+               var searchResultResponse = await System.Threading.Tasks.Task.Run(() => client.Search<Patient>());
+               // var searchResultResponse = client.Search<Patient>();
 
                 foreach (var entry in searchResultResponse.Entry)
                 {
@@ -752,8 +746,8 @@ namespace PluginHL7FHIR.API.Utility.EndpointHelperEndpoints
 
                 var client = apiClient.GetClient();
 
-               // var searchResultResponse = await System.Threading.Tasks.Task.Run(() => client.Search<Patient>());
-                var searchResultResponse = client.Search<Patient>();
+               var searchResultResponse = await System.Threading.Tasks.Task.Run(() => client.Search<Patient>());
+               // var searchResultResponse = client.Search<Patient>();
 
                 foreach (var entry in searchResultResponse.Entry)
                 {
@@ -850,8 +844,8 @@ namespace PluginHL7FHIR.API.Utility.EndpointHelperEndpoints
 
                 var client = apiClient.GetClient();
 
-               // var searchResultResponse = await System.Threading.Tasks.Task.Run(() => client.Search<Patient>());
-                var searchResultResponse = client.Search<Patient>();
+               var searchResultResponse = await System.Threading.Tasks.Task.Run(() => client.Search<Patient>());
+               // var searchResultResponse = client.Search<Patient>();
 
                 foreach (var entry in searchResultResponse.Entry)
                 {
