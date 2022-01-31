@@ -21,8 +21,8 @@ namespace PluginHL7FHIR.API.Utility
         static EndpointHelper()
         {
             PatientEndpointHelper.PatientEndpoints.ToList().ForEach(x => Endpoints.TryAdd(x.Key, x.Value));
-            MedicationEndpointHelper.MedicationDispenseEndpoints.ToList().ForEach(x => Endpoints.TryAdd(x.Key, x.Value));
-            InventoryReportEndpointHelper.InventoryReportEndpoints.ToList().ForEach(x => Endpoints.TryAdd(x.Key, x.Value));
+            MedicationEndpointHelper.MedicationDispenseEndpoints.ToList()
+                .ForEach(x => Endpoints.TryAdd(x.Key, x.Value));
         }
 
         public static Dictionary<string, Endpoint> GetAllEndpoints()

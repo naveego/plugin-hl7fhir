@@ -38,6 +38,9 @@
       <Compile Remove="API\Factory\ApiAuthenticator.cs" />
       <Compile Remove="API\Replication\**" />
       <Compile Remove="API\Factory\IApiAuthenticator.cs" />
+      <Compile Remove="API\Utility\EndpointHelperEndpoints\CompaniesEndpoints.cs" />
+      <Compile Remove="API\Utility\EndpointHelperEndpoints\ContactsEndpoints.cs" />
+      <Compile Remove="API\Utility\EndpointHelperEndpoints\InventoryReportEndpoint.cs" />
     </ItemGroup>
 
     <ItemGroup>
