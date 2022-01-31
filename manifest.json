@@ -1,0 +1,47 @@
+{
+  "id": "plugin-hl7fhir",
+  "displayName": "HL7 FHIR",
+  "description": "Plugin for integrating data with HL7 FHIR systems",
+  "apiVersion": "2",
+  "versionDescription": "Version 2",
+  "version": "2.0.0",
+  "iconFile": "icon.png",
+  "executable": "PluginHL7FHIR",
+  "kind": "publisher",
+  "os": "$GOOS",
+  "arch": "$GOARCH",
+  "canConfigure": true,
+  "canProduceMultipleSchemas": true,
+  "canAcceptQueryBasedSchemas": false,
+  "canUseOAuth": false,
+  "canWrite": false,
+  "configSchema": {
+    "ui": {
+      "ui:order": [
+        "Endpoint",
+        "Token"
+      ],
+      "Token": {
+        "ui:widget": "password"
+      }
+    },
+    "schema": {
+      "type": "object",
+      "properties": {
+        "Endpoint" : {
+          "type": "string",
+          "title": "Endpoint URL",
+          "description": "Endpoint URL of the database."
+        },
+        "Token" : {
+          "type": "string",
+          "title": "Token",
+          "description": "Token used for authentication against database. Leave blank if none."
+        }
+      },
+      "required": [
+        "Endpoint"
+      ]
+    }
+  }
+}
