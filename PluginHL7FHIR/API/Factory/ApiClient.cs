@@ -15,13 +15,9 @@ namespace PluginHL7FHIR.API.Factory
 {
     public class ApiClient: IApiClient
     {
-        private IApiAuthenticator Authenticator { get; set; }
-        private static HttpClient old_Client { get; set; }
-        
         private static FhirClient Client { get; set; }
         private Settings Settings { get; set; }
 
-        private const string ApiKeyParam = "hapikey";
 
         public ApiClient(Settings settings)
         {

@@ -37,6 +37,7 @@
     <ItemGroup>
       <Compile Remove="API\Factory\ApiAuthenticator.cs" />
       <Compile Remove="API\Replication\**" />
+      <Compile Remove="API\Factory\IApiAuthenticator.cs" />
     </ItemGroup>
 
     <ItemGroup>
