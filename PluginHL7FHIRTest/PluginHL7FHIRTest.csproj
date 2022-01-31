@@ -5,7 +5,7 @@
 
         <IsPackable>false</IsPackable>
 
-        <RootNamespace>PluginHubspotTest</RootNamespace>
+        <RootNamespace>PluginHL7FHIRTest</RootNamespace>
     </PropertyGroup>
 
     <ItemGroup>
