@@ -28,9 +28,16 @@ namespace PluginHL7FHIR.API.Utility.EndpointHelperEndpoints
                 List<string> staticSchemaProperties = new List<string>()
                 {
                     "id", 
-                    "context", 
-                    "destination", 
-                    "location", 
+                    "form", 
+                    "code", 
+                    "manufacturer", 
+                    "status", 
+                    "amount_numerator", 
+                    "amount_numerator_unit", 
+                    "amount_numerator_code", 
+                    "amount_denominator", 
+                    "amount_denominator_unit", 
+                    "amount_denominator_code", 
                 };
 
                 var properties = new List<Property>();
@@ -122,9 +129,15 @@ namespace PluginHL7FHIR.API.Utility.EndpointHelperEndpoints
                 List<string> staticSchemaProperties = new List<string>()
                 {
                     "id", 
-                    "context", 
-                    "destination", 
-                    "location", 
+                    "code",   
+                    "form",   
+                    "status",   
+                    "amount_denominator",   
+                    "amount_denominator_unit",   
+                    "amount_denominator_code",   
+                    "amount_numerator", 
+                    "amount_numerator_unit", 
+                    "amount_numerator_code", 
                 };
 
                 var properties = new List<Property>();
